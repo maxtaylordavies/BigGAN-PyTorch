@@ -13,8 +13,6 @@
 '''    
 import numpy as np
 from scipy import linalg # For numpy FID
-import time
-
 import torch
 import torch.nn as nn
 import torch.nn.functional as F

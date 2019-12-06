@@ -418,7 +418,7 @@ root_dict = {'I32': 'ImageNet', 'I32_hdf5': 'ILSVRC32.hdf5',
              'I128': 'ImageNet', 'I128_hdf5': 'ILSVRC128.hdf5',
              'I256': 'ImageNet', 'I256_hdf5': 'ILSVRC256.hdf5',
              'C10': 'cifar', 'C100': 'cifar',
-             'SWET_ERYTHEMA': 'data/swet_erythema', 'SWET_ERYTHEMA_hdf5': 'data/swet_erythema'}
+             'SWET_ERYTHEMA': 'swet_erythema', 'SWET_ERYTHEMA_hdf5': 'SWET_ERYTHEMA.hdf5'}
 nclass_dict = {'I32': 1000, 'I32_hdf5': 1000,
                'I64': 1000, 'I64_hdf5': 1000,
                'I128': 1000, 'I128_hdf5': 1000,

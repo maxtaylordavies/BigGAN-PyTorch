@@ -1,2 +1,4 @@
 .idea/
-data/
+data/swet_erythema/
+__pycache__/
+.DS_Store
