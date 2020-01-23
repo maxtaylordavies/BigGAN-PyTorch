@@ -809,7 +809,7 @@ class MyLogger(object):
         print('.mat logstyle not currently supported...')
       else:
         with open('%s/%s.log' % (self.root, arg), 'a') as f:
-          f.write('%d: %s\n' % (itr, self.logstyle % kwargs[arg]))
+          f.write('%s: %d: %s\n' % (datetime.datetime.now(), itr, self.logstyle % kwargs[arg]))
 
 
 # Write some metadata to the logs directory
