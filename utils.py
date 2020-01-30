@@ -412,7 +412,7 @@ imsize_dict = {'I32': 32, 'I32_hdf5': 32,
                'I128': 128, 'I128_hdf5': 128,
                'I256': 256, 'I256_hdf5': 256,
                'C10': 32, 'C100': 32,
-               'SWET_ERYTHEMA': 224, 'SWET_ERYTHEMA_hdf5': 224}
+               'SWET_ERYTHEMA': 256, 'SWET_ERYTHEMA_hdf5': 256}
 root_dict = {'I32': 'ImageNet', 'I32_hdf5': 'ILSVRC32.hdf5',
              'I64': 'ImageNet', 'I64_hdf5': 'ILSVRC64.hdf5',
              'I128': 'ImageNet', 'I128_hdf5': 'ILSVRC128.hdf5',
