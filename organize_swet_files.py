@@ -8,13 +8,13 @@ from shutil import copyfile
 def prepare_parser():
     parser = ArgumentParser()
     parser.add_argument(
-        '--source_path', type=str, default='/Users/maxtaylordavies/project/EczemaNet/data/swet_images_auto_crops',
+        '--source_path', type=str, default='/Users/maxtaylordavies/project/swet_images_auto_crops',
         help='path to autocrop data directory from EczemaNet repo')
     parser.add_argument(
         '--dest_path', type=str, default='/Users/maxtaylordavies/project/BigGAN-PyTorch/data/swet_erythema',
         help='path to where we want to put our data in the BigGAN repo')
     parser.add_argument(
-        '--labels_csv_path', type=str, default='/Users/maxtaylordavies/project/EczemaNet/csvs/repsites_scores_TISS+SASSAD.csv',
+        '--labels_csv_path', type=str, default='/Users/maxtaylordavies/project/repsites_scores_TISS+SASSAD.csv',
         help='path to csv file from EczemaNet repo with severity scores')
     return parser
 
