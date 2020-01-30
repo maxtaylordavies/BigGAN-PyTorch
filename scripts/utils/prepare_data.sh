@@ -1,4 +1,4 @@
-PBS -l walltime=01:00:00,select=1:ncpus=1:mem=16gb:ngpus=1
+#PBS -l walltime=01:00:00,select=1:ncpus=1:mem=16gb:ngpus=1
 module load anaconda3/personal
 source activate biggan
 cd $PBS_O_WORKDIR
