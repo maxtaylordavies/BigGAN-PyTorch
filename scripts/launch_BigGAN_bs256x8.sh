@@ -1,5 +1,13 @@
 #!/bin/bash
-python ../train.py \
+
+#PBS -l walltime=24:00:00
+#PBS -l select=1:ncpus=32:mem=192gb:ngpus=8:gpu_type=RTX6000
+
+module load anaconda3/personal
+source activate biggan
+cd $PBS_O_WORKDIR
+
+python train.py \
 --which_best FID --logs_root ../logs --experiment_name 2020-01-25 \
 --dataset SWET_ERYTHEMA_hdf5 --parallel --shuffle  --num_workers 8 --batch_size 256 --load_in_mem  \
 --num_G_accumulations 8 --num_D_accumulations 8 \
