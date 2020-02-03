@@ -7,9 +7,11 @@
 # source activate biggan
 cd $PBS_O_WORKDIR
 
+echo $CUDA_VISIBLE_DEVICES
+
 python train.py \
 --which_best FID --logs_root ../logs --experiment_name 2020-02-03 \
---dataset SWET_ERYTHEMA_hdf5 --parallel --shuffle  --num_workers 8 --batch_size 256 \
+--dataset SWET_ERYTHEMA_hdf5 --parallel --shuffle  --num_workers 8 --batch_size 64 \
 --num_G_accumulations 8 --num_D_accumulations 8 \
 --num_D_steps 1 --G_lr 1e-4 --D_lr 4e-4 --D_B2 0.999 --G_B2 0.999 \
 --G_attn 64 --D_attn 64 \
